@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
-
+import User from './user';
 class UserList extends Component {
   constructor() {
     super();
@@ -14,7 +14,7 @@ class UserList extends Component {
 componentDidMount() {
 axios.get(`https://jsonplaceholder.typicode.com/users`)
 .then(res => {
-const name = res.data;
+const users = res.data;
 console.log(name.name);
 this.setState({ name });
 }) 
@@ -24,6 +24,11 @@ this.setState({ name });
     return (
       <div>
         <Hello name={this.state.name} />
+       return (<div>
+    {this.state.people.map((person, index) => (
+        <p>Hello, {person.name} from {person.country}!</p>
+    ))}
+    </div>);
         <p>
           Start editing to see some magic happen :)
         </p>
