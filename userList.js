@@ -11,6 +11,15 @@ class UserList extends Component {
     };
   }
 
+componentDidMount() {
+axios.get(`https://jsonplaceholder.typicode.com/users`)
+.then(res => {
+const name = res.data;
+console.log(name.name);
+this.setState({ name });
+}) 
+
+}
   render() {
     return (
       <div>
