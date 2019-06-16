@@ -1,4 +1,4 @@
-iimport React, { Component } from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
@@ -37,4 +37,3 @@ this.setState({ users:users });
   }
 }
 
-render(<App />, document.getElementById('root'));
