@@ -17,7 +17,7 @@ class App extends Component {
         const name = res.data;
         console.log(name.name);
         this.setState({ name });
-      })
+      }) 
   }
 
   render() {
