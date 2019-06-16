@@ -7,16 +7,16 @@ class UserList extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React',users
+      name: 'React',users:[]
     };
   }
 
 componentDidMount() {
 axios.get(`https://jsonplaceholder.typicode.com/users`)
 .then(res => {
-const users = res.data;
-console.log(name.name);
-this.setState({ users:users });
+const usersdata = res.data;
+//console.log(name.name);
+this.setState({ users:userdata });
 }) 
 
 }
