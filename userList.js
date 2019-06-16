@@ -37,3 +37,4 @@ this.setState({ users:users });
   }
 }
 
+export default UserList;
