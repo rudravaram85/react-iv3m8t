@@ -25,8 +25,8 @@ this.setState({ users:users });
       <div>
         <Hello name={this.state.name} />
        return (<div>
-    {this.state.people.map((person, index) => (
-        <p>Hello, {person.name} from {person.country}!</p>
+    {this.state.users.map((user, index) => (
+        <p>Hello, {user.name} from {user.id}!</p>
     ))}
     </div>);
         <p>
