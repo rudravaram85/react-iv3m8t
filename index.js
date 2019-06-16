@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 import axios from 'axios';
-
+import UserList from './userList';
 class App extends Component {
   constructor() {
     super();
@@ -19,9 +19,9 @@ class App extends Component {
     return (
       <div>
         <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+        
+        <UserList/> 
+        
       </div>
     );
   }
