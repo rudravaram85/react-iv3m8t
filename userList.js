@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+iimport React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
@@ -7,7 +7,7 @@ class UserList extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      name: 'React',users
     };
   }
 
@@ -16,7 +16,7 @@ axios.get(`https://jsonplaceholder.typicode.com/users`)
 .then(res => {
 const users = res.data;
 console.log(name.name);
-this.setState({ name });
+this.setState({ users:users });
 }) 
 
 }
